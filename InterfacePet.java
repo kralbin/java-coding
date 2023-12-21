@@ -1,0 +1,15 @@
+interface Pet{
+	public void test();
+}
+class Dog implements Pet{
+	public void test(){
+		System.out.println("Interface Method is implemented");
+	}
+}
+
+class InterfacePet{
+	public static void main(String[] args){
+		Pet p  = new Dog();
+		p.test();
+	}
+}
